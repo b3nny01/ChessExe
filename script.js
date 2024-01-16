@@ -1006,11 +1006,11 @@ let exercises = {
 let showSolution = false;
 
 function checkSolution() {
-	let exercise = $(".exercise-form>input[name='exercise']").val();
-	let solution = $(".exercise-form>input[name='user-solution']").val();
+	let exercise = $(".exercise-form>input[name='exercise']").val().toLowerCase().trim();
+	let solution = $(".exercise-form>input[name='user-solution']").val().toLowerCase().trim();
 
 	if (exercises.hasOwnProperty(exercise)) {
-		if (exercises[exercise] === solution) {
+		if (exercises[exercise] === solution.toLowerCase().trim()) {
 
 			$(".output>.wrong").css("visibility", "hidden");
 			$(".output>.right").css("visibility", "visible");
