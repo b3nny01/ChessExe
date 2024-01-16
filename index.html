@@ -1,0 +1,35 @@
+.
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+
+<body onload="onLoad()">
+	<div class="main-card">
+		<div class="title-div">
+			<h1>Chess.exe</h1>
+		</div>
+		<form class="exercise-form">
+			<input type="text" name="exercise" placeholder="exercise name" />
+			<input type="text" name="user-solution" placeholder="your solution" />
+			<input type="text" name="exercise-solution" placeholder="solution" disabled />
+			<div class="controls">
+				<input type="button" name="check-solution" value="check solution" />
+				<input type="button" name="toggle-solution" value="view solution" />
+			</div>
+		</form>
+
+		<div class="output">
+			<img class="wrong" src="./wrong.jpg" />
+			<img class="right" src="./right.jpg" />
+		</div>
+	</div>
+
+</html>

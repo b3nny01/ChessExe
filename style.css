@@ -1,0 +1,130 @@
+::placeholder {
+	color: #386641;
+	opacity: 1;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	border: 1px solid #386641;
+	-webkit-text-fill-color: #F2E8CF;
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-color: #36454F;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+
+
+.main-card {
+	position: relative;
+	background-color: #6A994E;
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 90vw;
+	height: 80vh;
+	max-width: 600px;
+}
+
+.main-card>.title-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	height: 10vh;
+}
+
+.main-card>.title-div>h1 {
+	font-size: 3.5em;
+	font-family: 'Roboto', sans-serif;
+	color: #F2E8CF;
+}
+
+.main-card>.exercise-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 40vh;
+}
+
+.exercise-form>input {
+	margin: 10px;
+}
+.exercise-form>input[type="text"] {
+	width: 70%;
+	height: 50px;
+	font-size: 2em;
+	background-color: #6A994E;
+
+	text-align: center;
+	color: #F2E8CF;
+	border: 1px solid #386641;
+	border-radius: 10px;
+
+}
+
+.exercise-form>.controls {
+	width: 70%;
+	height: 60px;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.exercise-form>.controls>input[type="button"] {
+	background-color: #386641;
+	color: #F2E8CF;
+	width: 45%;
+	height: 50px;
+	font-size: 1em;
+	border-radius: 10px;
+}
+
+.exercise-form>.controls>input[type="button"]:hover {
+	color: #A7C957;
+	width: 50%;
+	height: 60px;
+}
+
+.main-card>.output {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 70%;
+	height: 20vh;
+}
+
+.output>img {
+	position: absolute;
+	top: 0px;
+	visibility: hidden;
+	height: 15vh;
+}
